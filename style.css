@@ -19,16 +19,20 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 
-.regular{
+.regular {
   font-weight: normal;
 }
 
-.title_size{
-    font-size: 30pt;
+.title_size {
+  font-size: 30pt;
 }
 
-.text_size{
-    font-size: 20pt;
+.text_size {
+  font-size: 20pt;
+}
+
+.opacity_05 {
+  opacity: 0.2
 }
 
 /* comuni */
@@ -101,7 +105,7 @@ body::-webkit-scrollbar {
   border: 0;
 }
 
-.eliminated_arrow{
+.eliminated_arrow {
   position: absolute;
   transform: translate(-50%, 0%);
   left: -150vw;
@@ -115,26 +119,32 @@ body::-webkit-scrollbar {
   top: 75vh;
 }
 
-.arrow{
-  width:72px;
+.arrow {
+  width: 72px;
 }
 
 @keyframes button_lampeggiante {
-  0% { opacity: 0;}
-  50% { opacity: 0.8;}
-  100% { opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.lampeggio{
-    animation: button_lampeggiante 2s infinite;
+.lampeggio {
+  animation: button_lampeggiante 2s infinite;
 }
-
-
 
 /* specifici */
 .logo {
   position: absolute;
-  width:400px;
+  width: 400px;
   /* height: 19.5vh; */
   transform: translate(-50%, -50%);
   left: 50.5%;
@@ -151,7 +161,7 @@ body::-webkit-scrollbar {
   width: 50vw;
 }
 
-.quadratini{
+.quadratini {
   position: absolute;
   transform: translate(0, -50%);
   left: 10vw;
@@ -160,8 +170,8 @@ body::-webkit-scrollbar {
   height: 130px;
 }
 
-.quadratino{
-  margin-top:10px;
+.quadratino {
+  margin-top: 10px;
   left: 0%;
   width: 15px;
   height: 15px;
@@ -185,11 +195,70 @@ body::-webkit-scrollbar {
   top: 65vh;
   width: 330px;
   height: 33px;
-
   text-align: center;
   padding-top: 10px;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Public Sans';
   border: 1.5px solid white;
+}
+
+.scheda_richiesta {
+  position: absolute;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 50vh;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform:translate(-50%, -50%)  rotate(360deg);
+  }
+}
+
+
+.spinner{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 45vw;
+  top: 47vh;
+  background-color: black;
+  border-radius: 100%;
+  animation: rotate 1s infinite linear;
+}
+
+.spinner_white{
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  transform: translate(-50%, -50%);
+  left: 45vw;
+  top: 47vh;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.spinner_square{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  padding-left: 0px;
+  background-color: white;
+}
+
+.loading {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 47vh;
+  font-family: 'Public Sans';
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
 }

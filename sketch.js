@@ -1,7 +1,9 @@
+var number=0;
 
 
 function preload(){
-  // put preload code here
+  myData = loadJSON("assets/peopleinspace.json");
+
 }
 
 function setup() {
@@ -26,7 +28,7 @@ function setup() {
     arrow4.mousePressed(goToPage5);
 
   var button5 = select('#button5');
-  button5.mousePressed(goToPage1);
+  button5.mousePressed(goToPage6);
 
 }
 
@@ -183,5 +185,57 @@ function goToPage5() {
   quadratino_4.addClass('white');
 
 
+}
 
+function goToPage6() {
+
+  //AGGIUNGERE CLASS ELIMINATED ALLA PAGINA PRIMA!
+  var page4 = select('#page4');
+  page4.removeClass('centered');
+  page4.addClass('eliminated_slideup');
+
+  //eliminare page5
+  var page5 = select('#page5');
+  page5.removeClass('centered_slideup');
+  page5.addClass('eliminated');
+
+  //compare page6
+  var page6 = select('#page6');
+  page6.removeClass('eliminated');
+  page6.addClass('centered');
+
+
+
+}
+
+function goToPage7(){
+  // //eliminare page5
+  // var page5 = select('#page5');
+  // page5.removeClass('centered_slideup');
+  // page5.addClass('eliminated');
+
+  //compare page7
+  var page7 = select('#page7');
+  page7.removeClass('eliminated');
+  page7.addClass('centered');
+
+  //si aggiungono nomi
+  var name = myData.people[number].name;
+  var born = myData.people[number].born;
+  var dead = myData.people[number].dead;
+  var age = myData.people[number].age;
+  var job = myData.people[number].job;
+  var religion = myData.people[number].religion;
+  var bio = myData.people[number].bio;
+
+  number += 1;
+
+
+  var new_name = select('#name').html(name);
+  var new_born = select('#born').html(born);
+  var new_dead = select('#dead').html(dead);
+  var new_age = select('#age').html(age);
+  var new_job = select('#job').html(job);
+  var new_religion = select('#religion').html(religion);
+  var new_bio = select('#bio').html(bio);
 }

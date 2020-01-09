@@ -1,0 +1,774 @@
+{
+  "number" : 34,
+  "people" : [
+    {
+      "name" : "Enrica Bazzi",
+        "age" : 90,
+        "born" : 1929,
+        "dead" : 2019,
+        "job" : "insegnante",
+        "religion" : "cristiana",
+        "bio" : "Ha insegnato per 40 anni matematica e fisica, ma odiava la fisica",
+        "orario" : 0
+    },
+    {
+      "name" : "Alcide Paolini Belletti",
+        "age" : 96,
+        "born" : 1923,
+        "dead" : 2020,
+        "job" : "operaio",
+        "religion" : "ateo",
+        "bio" : "Era esperto della produzione cinematografica di Elio Petri",
+        "orario" : 0
+    },
+    {
+         "name" : "Shqipe Nibhanupudi",
+           "age" : 63,
+           "born" : 1956,
+           "dead" : 2020,
+           "job" : "attrice",
+           "religion" : "musulmana",
+           "bio" : "Il suo musical preferito era Cats, ma non l’aveva mai visto",
+           "orario" : 0
+       },
+       {
+     "name" : "Francesco Maria Carnago",
+       "age" : 68,
+       "born" : 1952,
+       "dead" : 2020,
+       "job" : "manager",
+       "religion" : "ebreo",
+       "bio" : "Voleva bene ai suoi nove cagnolini",
+       "orario" : 0
+   },
+   {
+      "name" : "Giuliano Matteo Bardelli",
+        "age" : 82,
+        "born" : 1928,
+        "dead" : 2020,
+        "job" : "architetto",
+        "religion" : "ateo",
+        "bio" : "Volle che il suo ultimo pasto fosse una pizza con le verdure",
+        "orario" : 0
+    },
+    {
+          "name" : "Andrea Sturloni",
+            "age" : 58,
+            "born" : 1962,
+            "dead" : 2020,
+            "job" : "dirigente",
+            "religion" : "ateo",
+            "bio" : "Amava l’Inter più di ogni altra cosa"
+        },
+        {
+      "name" : "Piera Ghiringhelli",
+        "age" : 78,
+        "born" : 1942,
+        "dead" : 2020,
+        "job" : "suora",
+        "religion" : "cristiana",
+        "bio" : "Cucinava un’ottima pasta al pomodoro"
+    },
+    {
+     "name" : "Marco De Pamphilis",
+       "age" : 75,
+       "born" : 1945,
+       "dead" : 2020,
+       "job" : "impiegato",
+       "religion" : "ebreo",
+       "bio" : "Amava lavorare la ceramica"
+   },
+   {
+      "name" : "Israa Hakin",
+        "age" : 24,
+        "born" : 1995,
+        "dead" : 2020,
+        "job" : "studentessa",
+        "religion" : "musulmana",
+        "bio" : "Voleva diventare veterinaria"
+    },
+    {
+      "name" : "Ruya Najjar",
+        "age" : 36,
+        "born" : 1984,
+        "dead" : 2020,
+        "job" : "scrittrice",
+        "religion" : "musulmana",
+        "bio" : "Ha letto la saga di Harry Potter 15 volte"
+    },
+    {
+      "name" : "Irma Ferro Celletti",
+        "age" : 80,
+        "born" : 1939,
+        "dead" : 2020,
+        "job" : "casalinga",
+        "religion" : "ebrea",
+        "bio" : "Sapeva leggere i tarocchi"
+    },
+    {
+      "name" : "Luigina Ardizzone Freni",
+        "age" : 95,
+        "born" : 1925,
+        "dead" : 2020,
+        "job" : "medico",
+        "religion" : "ebrea",
+        "bio" : "Soffriva di vertigini"
+    },
+    {
+      "name" : "Maria Fiorenza Rolli Tini",
+        "age" : 40,
+        "born" : 1979,
+        "dead" : 2020,
+        "job" : "biologa",
+        "religion" : "atea",
+        "bio" : "Non aveva mai imparato ad andare in bicicletta"
+    },
+    {
+      "name" : "Zahir Adwallah",
+        "age" : 42,
+        "born" : 1978,
+        "dead" : 2020,
+        "job" : "imprenditore",
+        "religion" : "musulmano",
+        "bio" : "Aveva una collezione di cravatte di seta"
+    },
+    {
+      "name" : "Patrizio Carlo Traversi",
+        "age" : 71,
+        "born" : 1949,
+        "dead" : 2020,
+        "job" : "geologo",
+        "religion" : "cristiano",
+        "bio" : "Aveva scalato tutti i vulcani del mondo"
+    },
+    {
+      "name" : "Modestina Anita Treves",
+        "age" : 102,
+        "born" : 1918,
+        "dead" : 2020,
+        "job" : "artista",
+        "religion" : "ebrea",
+        "bio" : "Era stata in Giappone 32 volte per studiare l’arte dell’ikebana"
+    },
+  {
+     "name" : "Sigismondo Paolinis",
+       "age" : 91,
+       "born" : 1929,
+       "dead" : 2020,
+       "job" : "operaio",
+       "religion" : "cristiano",
+       "bio" : "Amava fare le confetture in casa"
+   },
+   {
+      "name" : "Antonio Berra",
+        "age" : 87,
+        "born" : 1933,
+        "dead" : 2020,
+        "job" : "orafo",
+        "religion" : "ebreo",
+        "bio" : "Era molto legato ai suoi amici d’infanzia"
+    },
+
+    {
+     "name" : "Massimiliano Ambrogi",
+       "age" : 91,
+       "born" : 1929,
+       "dead" : 2020,
+       "job" : "cuoco",
+       "religion" : "cristiano",
+       "bio" : "Era stato nominato Cavaliere della Repubblica"
+   },
+    {
+      "name" : "Mario Mureri",
+        "age" : 101,
+        "born" : 1919,
+        "dead" : 2020,
+        "job" : "sacerdote",
+        "religion" : "cristiano",
+        "bio" : "Diventò prete dopo una grande delusione d’amore"
+    },
+    {
+    "name" : "Ismaele Santoro",
+      "age" : 37,
+      "born" : 1982,
+      "dead" : 2020,
+      "job" : "soccoritore",
+      "religion" : "ebreo",
+      "bio" : "Aveva paura di nuotare"
+  },
+  {
+    "name" : "Omar Assan",
+      "age" : 42,
+      "born" : 1978,
+      "dead" : 2020,
+      "job" : "infermiere",
+      "religion" : "musulmano",
+      "bio" : "Aveva un istrice come animale domestico"
+  },
+  {
+   "name" : "Karim El Habi",
+     "age" : 25,
+     "born" : 1994,
+     "dead" : 2020,
+     "job" : "studente",
+     "religion" : "ateo",
+     "bio" : "La sua più grande passione era la pesca"
+ },
+ {
+      "name" : "Marina Pesconi",
+        "age" : 43,
+        "born" : 1977,
+        "dead" : 2020,
+        "job" : "casalinga",
+        "religion" : "atea",
+        "bio" : "Indossava solo jeans"
+    },
+    {
+   "name" : "Angela Luce Demorini",
+     "age" : 60,
+     "born" : 1960,
+     "dead" : 2020,
+     "job" : "allenatrice",
+     "religion" : "ebrea",
+     "bio" : "Era una grande appassionata di astronomia"
+ },
+ {
+     "name" : "Khaled Djaout",
+       "age" : 21,
+       "born" : 1998,
+       "dead" : 2020,
+       "job" : "maratoneta",
+       "religion" : "agnostico",
+       "bio" : "Aveva partecipato a due olimpiadi"
+   },
+   {
+   "name" : "Giacomo Besetti",
+     "age" : 40,
+     "born" : 1980,
+     "dead" : 2020,
+     "job" : "artista",
+     "religion" : "ebreo",
+     "bio" : "Voleva diventare prestigiatore"
+ },
+ {
+  "name" : "Mario Paolo Asseri Denuti",
+    "age" : 94,
+    "born" : 1927,
+    "dead" : 2020,
+    "job" : "imprenditore",
+    "religion" : "ateo",
+    "bio" : "Odiava il traffico"
+},
+{
+     "name" : "Halima Benmahmoud",
+       "age" : 50,
+       "born" : 1970,
+       "dead" : 2020,
+       "job" : "insegnante",
+       "religion" : "musulmana",
+       "bio" : "Scriveva poesie per tirare su il morale dei suoi studenti"
+   },
+   {
+   "name" : "Stella Masserotti Ghini",
+     "age" : 38,
+     "born" : 1982,
+     "dead" : 2020,
+     "job" : "stilista",
+     "religion" : "ebrea",
+     "bio" : "Aveva paura delle macchine da cucire"
+ },
+ {
+    "name" : "Kamila Erraki",
+      "age" : 41,
+      "born" : 1978,
+      "dead" : 2020,
+      "job" : "ostetrica",
+      "religion" : "musulmana",
+      "bio" : "Indossava solo abiti colorati"
+  },
+  {
+    "name" : "Federico De Borini",
+      "age" : 53,
+      "born" : 1967,
+      "dead" : 2020,
+      "job" : "sacerdote",
+      "religion" : "cristiano",
+      "bio" : "Praticava yoga da più di 20 anni"
+  },
+  {
+    "name" : "Carlo Maria Mestini Gori",
+      "age" : 64,
+      "born" : 1956,
+      "dead" : 2020,
+      "job" : "ingegnere navale",
+      "religion" : "ebreo",
+      "bio" : "Il suo sogno era andare su Marte"
+  },
+  {
+    "name" : "Jacopo Assoni",
+      "age" : 21,
+      "born" : 1999,
+      "dead" : 2020,
+      "job" : "studente",
+      "religion" : "cristiano",
+      "bio" : "Praticava triathlon"
+  },
+{
+    "name" : "Raya Azarou",
+      "age" : 51,
+      "born" : 1968,
+      "dead" : 2020,
+      "job" : "sarta",
+      "religion" : "musulmana",
+      "bio" : "Era un’ottima pasticcera"
+  },
+  {
+     "name" : "Ottaviano Meseri Bini",
+       "age" : 95,
+       "born" : 1924,
+       "dead" : 2020,
+       "job" : "architetto",
+       "religion" : "ebreo",
+       "bio" : "Ha fatto il giro del mondo in barca a vela"
+   },
+   {
+     "name" : "Rosa Maria Astori Lorti",
+       "age" : 55,
+       "born" : 1965,
+       "dead" : 2020,
+       "job" : "insegnante",
+       "religion" : "ebrea",
+       "bio" : "Fotografava ogni attimo della sua vita"
+   },
+   {
+     "name" : "Aida Demir",
+       "age" : 55,
+       "born" : 1965,
+       "dead" : 2020,
+       "job" : "chimica",
+       "religion" : "atea",
+       "bio" : "Era una grande appassionata di jazz"
+   },
+   {
+     "name" : "Marco Antonio Vasseri",
+       "age" : 92,
+       "born" : 1928,
+       "dead" : 2020,
+       "job" : "vigile del fuoco",
+       "religion" : "cristiano",
+       "bio" : "Da giovane era stato un campione di hockey"
+   },
+   {
+     "name" : "Giovanna Mieletti Feri",
+       "age" : 64,
+       "born" : 1956,
+       "dead" : 2020,
+       "job" : "poetessa",
+       "religion" : "ebrea",
+       "bio" : "Aveva una vasta collezione di dischi in vinile"
+   },
+   {
+      "name" : "Alessandro Abdhalla",
+        "age" : 34,
+        "born" : 1985,
+        "dead" : 2020,
+        "job" : "cardiologo",
+        "religion" : "musulmano",
+        "bio" : "Beveva 8 caffè al giorno"
+    },
+    {
+      "name" : "Francesco Traboni",
+        "age" : 78,
+        "born" : 1942,
+        "dead" : 2020,
+        "job" : "impiegato",
+        "religion" : "cristiano cattolico",
+        "bio" : "Ha accompagnato i suoi figli a scuola ogni giorno per 20 anni"
+    },
+    {
+      "name" : "Marta Lucia Gusetti",
+        "age" : 30,
+        "born" : 1990,
+        "dead" : 2020,
+        "job" : "scrittrice",
+        "religion" : "atea",
+        "bio" : "Non riusciva a vivere lontana dal mare"
+    },
+    {
+      "name" : "Yasmine Toumanj",
+        "age" : 59,
+        "born" : 1961,
+        "dead" : 2020,
+        "job" : "brigadiere",
+        "religion" : "musulmano",
+        "bio" : "Era cresciuto con la musica dei Beatles"
+    },
+    {
+      "name" : "Anita Smith",
+        "age" : 88,
+        "born" : 1932,
+        "dead" : 2020,
+        "job" : "infermiera",
+        "religion" : "ebrea",
+        "bio" : "Si era innamorata di un soldato italiano"
+    },
+    {
+     "name" : "Andrea Sortega Fini",
+       "age" : 47,
+       "born" : 1973,
+       "dead" : 2020,
+       "job" : "compositore",
+       "religion" : "ateo",
+       "bio" : "Non aveva mai guardato la televisione"
+   },
+   {
+     "name" : "Marco El Goudani",
+       "age" : 50,
+       "born" : 1970,
+       "dead" : 2020,
+       "job" : "pasticcere",
+       "religion" : "musulmano",
+       "bio" : "Aveva imparato a cucinare guardando le sue nonne"
+   },
+   {
+     "name" : "Matteo Segre",
+       "age" : 95,
+       "born" : 1924,
+       "dead" : 2020,
+       "job" : "Giornalista",
+       "religion" : "ebreo",
+       "bio" : "Aveva una grande passione per la cartografia"
+   },
+   {
+     "name" : "Farah Raji",
+       "age" : 19,
+       "born" : 2000,
+       "dead" : 2020,
+       "job" : "studentessa",
+       "religion" : "musulmana",
+       "bio" : "Aveva sempre le unghie smaltate di azzurro"
+   },
+   {
+     "name" : "Alessandra Berini",
+       "age" : 30,
+       "born" : 1989,
+       "dead" : 2020,
+       "job" : "impiegata",
+       "religion" : "cristiana",
+       "bio" : "Aveva una vasta collezione di foulard di seta"
+   },
+   {
+     "name" : "Giorgio Zaccaria Farina",
+       "age" : 58,
+       "born" : 1962,
+       "dead" : 2020,
+       "job" : "fotografo",
+       "religion" : "ebreo",
+       "bio" : "Ricevette la sua prima macchina fotografica a 8 anni"
+   },
+   {
+     "name" : "Faya Sourajaaj",
+       "age" : 28,
+       "born" : 1992,
+       "dead" : 2020,
+       "job" : "studentessa",
+       "religion" : "musulmana",
+       "bio" : "Era una grande appassionata di Star Trek"
+   },
+   {
+     "name" : "Berenice Geletti Rifi",
+       "age" : 79,
+       "born" : 1940,
+       "dead" : 2020,
+       "job" : "stilista",
+       "religion" : "atea",
+       "bio" : "Nel tempo libero produceva birra per la sua famiglia"
+   },
+   {
+     "name" : "Iman Baruhki",
+       "age" : 45,
+       "born" : 1975,
+       "dead" : 2020,
+       "job" : "chimica",
+       "religion" : "musulmana",
+       "bio" : "Da ragazza era stata nella nazionale di pallavolo"
+   },
+   {
+     "name" : "Marielle Juaréz Silva",
+       "age" : 37,
+       "born" : 1982,
+       "dead" : 2020,
+       "job" : "panettiera",
+       "religion" : "cristiana",
+       "bio" : "La sua più grande passione era la danza"
+   },
+   {
+     "name" : "Stella Maria Feletti",
+       "age" : 78,
+       "born" : 1942,
+       "dead" : 2020,
+       "job" : "sarta",
+       "religion" : "atea",
+       "bio" : "Viveva con i suoi 5 gatti persiani"
+   },
+   {
+     "name" : "Marcus Denutich",
+       "age" : 90,
+       "born" : 1930,
+       "dead" : 2020,
+       "job" : "falegname",
+       "religion" : "cristiano",
+       "bio" : "Era un esperto di minerali"
+   },
+   {
+     "name" : "Osvaldo Mariottini",
+       "age" : 51,
+       "born" : 1969,
+       "dead" : 2020,
+       "job" : "ginecologo",
+       "religion" : "agnostico",
+       "bio" : "Suonava il pianoforte e il banjo"
+   },
+   {
+     "name" : "Francesco Carlo Asti",
+       "age" : 45,
+       "born" : 1974,
+       "dead" : 2020,
+       "job" : "allevatore",
+       "religion" : "ebreo",
+       "bio" : "Nel tempo libero intagliava il legno"
+   },
+{
+     "name" : "Donatella Krusich",
+       "age" : 62,
+       "born" : 1958,
+       "dead" : 2020,
+       "job" : "ferroviera",
+       "religion" : "atea",
+       "bio" : "Era stata una campionessa di atletica"
+   },
+   {
+      "name" : "Andrew Steinberg",
+        "age" : 27,
+        "born" : 1992,
+        "dead" : 2020,
+        "job" : "studente",
+        "religion" : "ebreo",
+        "bio" : "Scriveva poemetti epici"
+    },
+ {
+      "name" : "Massimo Portini",
+        "age" : 105,
+        "born" : 1915,
+        "dead" : 2020,
+        "job" : "contadino",
+        "religion" : "cristiano",
+        "bio" : "Era stato un partigiano"
+    },
+ {
+      "name" : "Alizée Dubois",
+        "age" : 19,
+        "born" : 2000,
+        "dead" : 2020,
+        "job" : "commessa",
+        "religion" : "cristiana",
+        "bio" : "Faceva sempre colazione al bar"
+    },
+ {
+      "name" : "Assunta Paoloni",
+        "age" : 75,
+        "born" : 1945,
+        "dead" : 2020,
+        "job" : "infermiera",
+        "religion" : "cristiana",
+        "bio" : "Il suo film preferito era 'Ladri di biciclette'"
+    },
+ {
+      "name" : "Carolina Weiler",
+        "age" : 59,
+        "born" : 1960,
+        "dead" : 2020,
+        "job" : "cuoca",
+        "religion" : "ebrea",
+        "bio" : "Amava fare giardinaggio"
+    },
+    {
+     "name" : "Davide Maria Laureghi",
+       "age" : 73,
+       "born" : 1947,
+       "dead" : 2020,
+       "job" : "imprenditore",
+       "religion" : "ateo",
+       "bio" : "Aveva letto ‘Alla ricerca del tempo perduto’ 2 volte"
+   },
+   {
+     "name" : "Guglielmo Ravasio",
+       "age" : 98,
+       "born" : 1922,
+       "dead" : 2020,
+       "job" : "allevatore",
+       "religion" : "cristiano",
+       "bio" : "Da giovane voleva prendere i voti"
+   },
+{
+     "name" : "Loredana Folon",
+       "age" : 73,
+       "born" : 1946,
+       "dead" : 2020,
+       "job" : "suora",
+       "religion" : "cristiana",
+       "bio" : "Amava giocare a pallacanestro"
+   },
+{
+     "name" : "Alfonsina Denotti",
+       "age" : 81,
+       "born" : 1939,
+       "dead" : 2020,
+       "job" : "casalinga",
+       "religion" : "atea",
+       "bio" : "Indossava sempre abiti dai colori pastello"
+   },
+{
+     "name" : "Frank Kuntz",
+       "age" : 55,
+       "born" : 1964,
+       "dead" : 2020,
+       "job" : "preside",
+       "religion" : "agnostico",
+       "bio" : "Amava la pizza con l’ananas"
+   },
+{
+     "name" : "Mostafa Laroui",
+       "age" : 42,
+       "born" : 1978,
+       "dead" : 2020,
+       "job" : "imbianchino",
+       "religion" : "musulmano",
+       "bio" : "Da giovane suonava la tromba"
+   },
+   {
+     "name" : "Giacomina Goretti Sedi",
+       "age" : 97,
+       "born" : 1923,
+       "dead" : 2020,
+       "job" : "scultrice",
+       "religion" : "ebrea",
+       "bio" : "Era stata una staffetta partigiana"
+   },
+{
+     "name" : "Lorenzo Feroli",
+       "age" : 39,
+       "born" : 1980,
+       "dead" : 2020,
+       "job" : "dirigente d’azienda",
+       "religion" : "ateo",
+       "bio" : "Non aveva mai usato un computer"
+   },
+{
+     "name" : "Juan Carlos Garcìa Diaz",
+       "age" : 52,
+       "born" : 1968,
+       "dead" : 2020,
+       "job" : "istruttore cinofilo",
+       "religion" : "cristiano",
+       "bio" : "Era stato un campione di rally"
+   },
+{
+     "name" : "Adriana Melini",
+       "age" : 70,
+       "born" : 1949,
+       "dead" : 2020,
+       "job" : "panettiera",
+       "religion" : "atea",
+       "bio" : "Amava giocare a Burraco"
+   },
+{
+     "name" : "Bojan Jovanović",
+       "age" : 42,
+       "born" : 1977,
+       "dead" : 2020,
+       "job" : "dentista",
+       "religion" : "cristiano",
+       "bio" : "Nel tempo libero giocava a cricket"
+   },
+   {
+     "name" : "Carlotta Benetti Ghedi",
+       "age" : 50,
+       "born" : 1970,
+       "dead" : 2020,
+       "job" : "educatrice",
+       "religion" : "ebrea",
+       "bio" : "Sapeva parlare sei lingue"
+   },
+{
+     "name" : "Daniele Beruelli",
+       "age" : 74,
+       "born" : 1946,
+       "dead" : 2020,
+       "job" : "maresciallo",
+       "religion" : "cristiano",
+       "bio" : "Nel tempo libero giocava a cricket"
+   },
+{
+     "name" : "Corinne Mereux",
+       "age" : 25,
+       "born" : 1994,
+       "dead" : 2020,
+       "job" : "ballerina",
+       "religion" : "atea",
+       "bio" : "Non sopportava i cetriolini sott’olio"
+   },
+{
+     "name" : "Deborah Caretti",
+       "age" : 36,
+       "born" : 1985,
+       "dead" : 2020,
+       "job" : "nuotatrice",
+       "religion" : "cristiana",
+       "bio" : "Aveva un maialino domestico"
+   },
+{
+     "name" : "Santo De Carli",
+       "age" : 91,
+       "born" : 1928,
+       "dead" : 2020,
+       "job" : "minatore",
+       "religion" : "cristiano",
+       "bio" : "Aveva una barca a vela chiamata Edoné"
+   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {
+       "name" : "Maria Rosa Zanetti",
+       "age" : 85,
+       "born" : 1934,
+       "dead" : 2019,
+       "job" : "medico",
+       "religion" : "atea",
+       "bio" : "Fu la prima donna della sua città a prendere una laurea in medicina"
+    }
+  ]
+}
