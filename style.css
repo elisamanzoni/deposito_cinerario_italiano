@@ -1,0 +1,165 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* attributi soli */
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.white_txt {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.regular{
+  font-weight: normal;
+}
+
+.title_size{
+    font-size: 30pt;
+}
+
+.text_size{
+    font-size: 20pt;
+}
+
+/* comuni */
+.centered {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 50vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.eliminated {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: -70vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes eliminated_slideup {
+  from {
+    top: 50vh
+  }
+
+  to {
+    top: -50vh;
+  }
+}
+
+.eliminated_slideup {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  width: 100vw;
+  height: 100vh;
+  animation: eliminated_slideup 2s forwards;
+}
+
+@keyframes centered_slideup {
+  from {
+    top: 150vh
+  }
+
+  to {
+    top: 50vh;
+  }
+}
+
+.centered_slideup {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  width: 100vw;
+  height: 100vh;
+  animation: centered_slideup 2s forwards;
+}
+
+.button {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: 50vw;
+  top: 75vh;
+  /* width: 120px; */
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Public Sans';
+  border: 0;
+}
+
+.button2 {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: 50vw;
+  top: 75vh;
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Public Sans';
+  border: 1.5px solid white;
+}
+
+@keyframes button_lampeggiante {
+  0% { opacity: 0.8;}
+  50% { opacity: 0;}
+  100% { opacity: 0.8;}
+}
+
+.lampeggio{
+    animation: button_lampeggiante 2s infinite;
+}
+
+
+
+/* specifici */
+.logo {
+  position: absolute;
+  height: 19.5vh;
+  transform: translate(-50%, -50%);
+  left: 50.5%;
+  top: 45%;
+}
+
+.text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 50vh;
+  font-family: 'Public Sans';
+  text-align: center;
+  width: 50vw;
+}
+
+.quadratini{
+  position: absolute;
+  transform: translate(0, -50%);
+  left: 10vw;
+  top: 50vh;
+  width: 25px;
+  height: 130px;
+}
+
+.quadratino{
+  margin-top:10px;
+  left: 0%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+}
