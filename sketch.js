@@ -293,6 +293,10 @@ function goToPage9(){
   page8.removeClass('centered');
   page8.addClass('eliminated');
 
+  //eliminare page8
+  var elaborazione_barra_piena= select('#elaborazione_barra_piena');
+  elaborazione_barra_piena.removeClass('elaborazione_barra_piena');
+
   //compare page9
   var page9 = select('#page9');
   page9.removeClass('eliminated');

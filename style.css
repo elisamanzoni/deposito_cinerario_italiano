@@ -329,6 +329,7 @@ body::-webkit-scrollbar {
 .text_elab{
   position: absolute;
   top: 45vh!important;
+  width: 90vw!important;
 }
 
 .elaborazione_barra_vuota{
