@@ -1,4 +1,5 @@
 var number=0;
+var contatore_spinner = 0;
 
 
 function preload(){
@@ -30,23 +31,37 @@ function setup() {
   var button5 = select('#button5');
   button5.mousePressed(goToPage6);
 
+  var button7 = select('#button7');
+  button7.mousePressed(goToPage1);
+
 }
 
 function draw() {
+
+//fermare spinner
+
+contatore_spinner ++;
+var page6 = select('#page6');
+console.log(contatore_spinner);
+
+if(page6.hasClass('centered') && contatore_spinner==200){
+  goToPage7();
+  contatore_spinner=0;
+}
+
+  // page6.removeClass('eliminated');
+  // page6.addClass('centered');
 
 }
 
 function goToPage1() {
 
   //AGGIUNGERE CLASS ELIMINATED ALLA PAGINA PRIMA!
-  var page4 = select('#page4');
-  page4.removeClass('centered');
-  page4.addClass('eliminated_slideup');
 
   //eliminare page1
-  var page5 = select('#page5');
-  page5.removeClass('centered_slideup');
-  page5.addClass('eliminated');
+  var page7 = select('#page7');
+  page7.removeClass('centered');
+  page7.addClass('eliminated');
 
   //compare page2
   var page1 = select('#page1');
@@ -204,15 +219,17 @@ function goToPage6() {
   page6.removeClass('eliminated');
   page6.addClass('centered');
 
+  contatore_spinner=0;
+
 
 
 }
 
 function goToPage7(){
-  // //eliminare page5
-  // var page5 = select('#page5');
-  // page5.removeClass('centered_slideup');
-  // page5.addClass('eliminated');
+  //eliminare page5
+  var page6 = select('#page6');
+  page6.removeClass('centered');
+  page6.addClass('eliminated');
 
   //compare page7
   var page7 = select('#page7');
