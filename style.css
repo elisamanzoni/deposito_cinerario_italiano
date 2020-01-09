@@ -101,19 +101,22 @@ body::-webkit-scrollbar {
   border: 0;
 }
 
-.button2 {
+.eliminated_arrow{
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: -150vw;
+  top: 75vh;
+}
+
+.centered_arrow {
   position: absolute;
   transform: translate(-50%, 0%);
   left: 50vw;
   top: 75vh;
-  width: 130px;
-  height: 30px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 10px;
-  font-family: 'Public Sans';
-  border: 1.5px solid white;
+}
+
+.arrow{
+  width:72px;
 }
 
 @keyframes button_lampeggiante {
