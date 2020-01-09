@@ -120,9 +120,9 @@ body::-webkit-scrollbar {
 }
 
 @keyframes button_lampeggiante {
-  0% { opacity: 0.8;}
-  50% { opacity: 0;}
-  100% { opacity: 0.8;}
+  0% { opacity: 0;}
+  50% { opacity: 0.8;}
+  100% { opacity: 0;}
 }
 
 .lampeggio{
@@ -134,7 +134,8 @@ body::-webkit-scrollbar {
 /* specifici */
 .logo {
   position: absolute;
-  height: 19.5vh;
+  width:400px;
+  /* height: 19.5vh; */
   transform: translate(-50%, -50%);
   left: 50.5%;
   top: 45%;
@@ -165,4 +166,30 @@ body::-webkit-scrollbar {
   width: 15px;
   height: 15px;
   border: 1px solid white;
+}
+
+.text5 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 45vh;
+  font-family: 'Public Sans';
+  text-align: center;
+  width: 50vw;
+}
+
+.button5 {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: 50vw;
+  top: 65vh;
+  width: 330px;
+  height: 33px;
+
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Public Sans';
+  border: 1.5px solid white;
 }

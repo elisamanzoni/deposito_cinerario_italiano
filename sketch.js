@@ -119,5 +119,10 @@ function goToPage5() {
   var quadratino_4 = select('#quadratino_4');
   quadratino_4.addClass('white');
 
+  //sparisce arrow1
+  var arrow1 = select('#arrow1');
+  arrow1.addClass('eliminated_arrow');
+  arrow1.removeClass('centered_arrow');
+
 
 }
