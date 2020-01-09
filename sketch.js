@@ -32,7 +32,10 @@ function setup() {
   button5.mousePressed(goToPage6);
 
   var button7 = select('#button7');
-  button7.mousePressed(goToPage1);
+  button7.mousePressed(goToPage8);
+
+  var page9 = select('#page9');
+  page9.mousePressed(goToPage1);
 
 }
 
@@ -42,10 +45,16 @@ function draw() {
 
 contatore_spinner ++;
 var page6 = select('#page6');
-console.log(contatore_spinner);
+var page8 = select('#page8');
+
 
 if(page6.hasClass('centered') && contatore_spinner==200){
   goToPage7();
+  contatore_spinner=0;
+}
+
+if(page8.hasClass('centered') && contatore_spinner==200){
+  goToPage9();
   contatore_spinner=0;
 }
 
@@ -59,9 +68,9 @@ function goToPage1() {
   //AGGIUNGERE CLASS ELIMINATED ALLA PAGINA PRIMA!
 
   //eliminare page1
-  var page7 = select('#page7');
-  page7.removeClass('centered');
-  page7.addClass('eliminated');
+  var page9 = select('#page9');
+  page9.removeClass('centered');
+  page9.addClass('eliminated');
 
   //compare page2
   var page1 = select('#page1');
@@ -246,7 +255,7 @@ function goToPage7(){
   var bio = myData.people[number].bio;
 
   number += 1;
-
+console.log(number)
 
   var new_name = select('#name').html(name);
   var new_born = select('#born').html(born);
@@ -255,4 +264,37 @@ function goToPage7(){
   var new_job = select('#job').html(job);
   var new_religion = select('#religion').html(religion);
   var new_bio = select('#bio').html(bio);
+}
+
+function goToPage8(){
+  //eliminare page7
+  var page7 = select('#page7');
+  page7.removeClass('centered');
+  page7.addClass('eliminated');
+
+  //compare page8
+  var page8 = select('#page8');
+  page8.removeClass('eliminated');
+  page8.addClass('centered');
+
+console.log(number)
+  var name = myData.people[number-1].name;
+  var elaborazione = select('#elaborazione').html('Elaborazione di ' + name +' in corso');
+
+  var elaborazione_barra_piena = select('#elaborazione_barra_piena');
+  elaborazione_barra_piena.addClass('elaborazione_barra_piena');
+
+  contatore_spinner=0;
+}
+
+function goToPage9(){
+  //eliminare page8
+  var page8 = select('#page8');
+  page8.removeClass('centered');
+  page8.addClass('eliminated');
+
+  //compare page9
+  var page9 = select('#page9');
+  page9.removeClass('eliminated');
+  page9.addClass('centered');
 }

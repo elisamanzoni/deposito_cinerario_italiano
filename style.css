@@ -227,7 +227,7 @@ body::-webkit-scrollbar {
   position: absolute;
   height: 30px;
   width: 30px;
-  left: 45vw;
+  left: 44vw;
   top: 47vh;
   background-color: black;
   border-radius: 100%;
@@ -239,7 +239,7 @@ body::-webkit-scrollbar {
   height: 18px;
   width: 18px;
   transform: translate(-50%, -50%);
-  left: 45vw;
+  left: 44vw;
   top: 47vh;
   background-color: white;
   border-radius: 100%;
@@ -256,7 +256,7 @@ body::-webkit-scrollbar {
 .loading {
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 50vw;
+  left: 51vw;
   top: 47vh;
   font-family: 'Public Sans';
   text-align: center;
@@ -324,4 +324,31 @@ body::-webkit-scrollbar {
   font-weight: bold;
   font-family: 'Public Sans';
   border: 1.5px solid black;
+}
+
+.text_elab{
+  position: absolute;
+  top: 45vh!important;
+}
+
+.elaborazione_barra_vuota{
+position: absolute;
+transform: translate(0, -50%);
+left: 25vw;
+top: 50vh;
+width: 50vw;
+height: 10px;
+border: 1.5px solid black;
+}
+
+@keyframes width_barra_elaborazione {
+  0%{ width:0%;}
+  100%{width:100%}
+}
+
+.elaborazione_barra_piena{
+position: absolute;
+animation: width_barra_elaborazione 3s forwards linear;
+height: 100%;
+background-color: black;
 }
