@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
   position: absolute;
   transform: translate(-50%, 0%);
   left: 50vw;
-  top: 65vh;
+  top: 75vh;
   width: 330px;
   height: 33px;
   text-align: center;
@@ -309,6 +309,13 @@ body::-webkit-scrollbar {
 .bio{
   position: absolute;
   top: 255px;
+}
+
+.fototessera{
+  position: absolute;
+  height: 20vh;
+  left: 78vw;
+  top: 50px;
 }
 
 .button7 {

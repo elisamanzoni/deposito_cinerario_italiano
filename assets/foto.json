@@ -1,0 +1,70 @@
+{
+  "number" : 5,
+  "people" : [
+   {
+      "name" : "Maria Fiorenza Tini",
+        "age" : 40,
+        "born" : 1979,
+        "dead" : 2020,
+        "job" : "Biologa",
+        "religion" : "Ateismo",
+        "bio" : "Non aveva mai imparato ad andare in bicicletta",
+        "photo": "fototessere/1.jpg"
+    },
+ {
+      "name" : "Gregorio Lorelli",
+        "age" : 61,
+        "born" : 1958,
+        "dead" : 2020,
+        "job" : "Pizzaiolo",
+        "religion" : "Cristianesimo",
+        "bio" : "Aveva conosciuto la moglie Caroline durante un viaggio a Los Angeles",
+        "photo": "fototessere/2.jpg"
+
+    },
+ {
+      "name" : "Davide Maria Laureghi",
+        "age" : 73,
+        "born" : 1947,
+        "dead" : 2020,
+        "job" : "Imprenditore tessile",
+        "religion" : "Ateismo",
+        "bio" : "Aveva letto ‘Alla ricerca del tempo perduto’ di Marcel Proust in circa due anni",
+        "photo": "fototessere/3.jpg"
+
+    },
+    {
+      "name" : "Iris Campaldi",
+        "age" : 35,
+        "born" : 1985,
+        "dead" : 2020,
+        "job" : "Fotografa",
+        "religion" : "Ebraismo",
+        "bio" : "Il suo film preferito era ‘A Beautiful Mind’ e l’aveva visto più di 10 volte",
+       "photo": "fototessere/4.jpg"
+
+    },
+{
+      "name" : "Inge Sachs",
+        "age" : 36,
+        "born" : 1984,
+        "dead" : 2020,
+        "job" : "Ricercatrice medica",
+        "religion" : "Ebraismo",
+        "bio" : "Dopo l’Erasmus a Genova, aveva scelto di vivere e lavorare in Italia perché detestava il rigido inverno della Turingia",
+        "photo": "fototessere/5.jpg"
+
+    },
+     {
+       "name" : "Maria Rosa Zanetti",
+       "age" : 88,
+       "born" : 1932,
+       "dead" : 2020,
+       "job" : "Oculista",
+       "religion" : "Ateismo",
+       "bio" : "Fu la prima donna della sua città a prendere una laurea in medicina",
+        "photo": "fototessere/6.jpg"
+
+    }
+  ]
+}

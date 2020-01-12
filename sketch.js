@@ -1,14 +1,17 @@
 var number=0;
 var contatore_spinner = 0;
 
+var myImage;
+
+
+
 
 function preload(){
-  myData = loadJSON("assets/peopleinspace.json");
+  myData = loadJSON("assets/foto.json");
 
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
 
   var page1 = select('#page1');
   page1.mousePressed(goToPage2);
@@ -229,9 +232,6 @@ function goToPage6() {
   page6.addClass('centered');
 
   contatore_spinner=0;
-
-
-
 }
 
 function goToPage7(){
@@ -246,6 +246,9 @@ function goToPage7(){
   page7.addClass('centered');
 
   //si aggiungono nomi
+
+  number += 1;
+
   var name = myData.people[number].name;
   var born = myData.people[number].born;
   var dead = myData.people[number].dead;
@@ -253,9 +256,10 @@ function goToPage7(){
   var job = myData.people[number].job;
   var religion = myData.people[number].religion;
   var bio = myData.people[number].bio;
+  var photo = myData.people[number].photo;
 
-  number += 1;
-console.log(number)
+
+  console.log(number)
 
   var new_name = select('#name').html(name);
   var new_born = select('#born').html(born);
@@ -264,6 +268,10 @@ console.log(number)
   var new_job = select('#job').html(job);
   var new_religion = select('#religion').html(religion);
   var new_bio = select('#bio').html(bio);
+
+  var new_photo = createImg(photo);
+  new_photo.parent('#page7');
+  new_photo.addClass('fototessera');
 }
 
 function goToPage8(){
@@ -278,7 +286,7 @@ function goToPage8(){
   page8.addClass('centered');
 
 console.log(number)
-  var name = myData.people[number-1].name;
+  var name = myData.people[number].name;
   var elaborazione = select('#elaborazione').html('Elaborazione di ' + name +' in corso');
 
   var elaborazione_barra_piena = select('#elaborazione_barra_piena');
