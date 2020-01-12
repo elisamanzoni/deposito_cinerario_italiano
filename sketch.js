@@ -3,11 +3,15 @@ var contatore_spinner = 0;
 
 var myImage;
 
+var date, hours, minutes, seconds;
+var position;
+
 
 
 
 function preload(){
   myData = loadJSON("assets/foto.json");
+  position = getCurrentPosition();
 
 }
 
@@ -232,6 +236,13 @@ function goToPage6() {
   page6.addClass('centered');
 
   contatore_spinner=0;
+
+//creo foto
+  number += 1;
+  var photo = myData.people[number].photo;
+  var new_photo = createImg(photo);
+  new_photo.parent('#page7');
+  new_photo.addClass('fototessera');
 }
 
 function goToPage7(){
@@ -247,8 +258,6 @@ function goToPage7(){
 
   //si aggiungono nomi
 
-  number += 1;
-
   var name = myData.people[number].name;
   var born = myData.people[number].born;
   var dead = myData.people[number].dead;
@@ -256,7 +265,6 @@ function goToPage7(){
   var job = myData.people[number].job;
   var religion = myData.people[number].religion;
   var bio = myData.people[number].bio;
-  var photo = myData.people[number].photo;
 
 
   console.log(number)
@@ -269,9 +277,6 @@ function goToPage7(){
   var new_religion = select('#religion').html(religion);
   var new_bio = select('#bio').html(bio);
 
-  var new_photo = createImg(photo);
-  new_photo.parent('#page7');
-  new_photo.addClass('fototessera');
 }
 
 function goToPage8(){
@@ -309,4 +314,22 @@ function goToPage9(){
   var page9 = select('#page9');
   page9.removeClass('eliminated');
   page9.addClass('centered');
+
+  //si crea pdf
+
+  var name = myData.people[number].name;
+
+  var date = new Date;
+    hours = date.getHours();
+    minutes = '0' + date.getMinutes();
+    seconds = '0' + date.getSeconds();
+    var formattedTime = hours + ":" + minutes.substr(-2) + ':' + seconds.substr(-2);
+
+    console.log('time: ' + formattedTime);
+
+  doc = new jsPDF();
+  doc.text(name, 10, 10);
+  doc.text(formattedTime, 10, 20);
+  doc.save('a4.pdf');
+  doc.autoPrint();
 }
