@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 }
 
 .opacity_black{
-  opacity: 0.9
+  opacity: 0.8 !important;
 }
 
 .public_sans{
@@ -67,6 +67,10 @@ body::-webkit-scrollbar {
   left: -70vw;
   width: 100vw;
   height: 100vh;
+}
+
+.page{
+
 }
 
 @keyframes eliminated_slideup {
@@ -273,11 +277,13 @@ body::-webkit-scrollbar {
   /* height: 19.5vh; */
   transform: translate(-50%, -50%);
   left: 50.5%;
-  top: 45%;
+  top: 45vh;
 }
+
 
 .text {
   position: absolute;
+  line-height: 40px;
   transform: translate(-50%, -50%);
   left: 50vw;
   top: 50vh;

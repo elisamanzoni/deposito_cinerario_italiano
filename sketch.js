@@ -107,7 +107,7 @@ function goToPage2() {
   page2.addClass('centered_opacity');
 
   //compare background
-  var background = select('#background');
+  var background = select('#black_background');
   background.removeClass('eliminated');
   background.addClass('centered_opacity');
 
@@ -370,7 +370,7 @@ function goToPage6() {
   arrow_top5.addClass('eliminated_arrow');
 
   //eliminare background
-  var background = select('#background');
+  var background = select('#black_background');
   background.removeClass('centered_opacity');
   background.addClass('eliminated');
 
