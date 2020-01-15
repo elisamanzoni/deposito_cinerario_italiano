@@ -1,6 +1,9 @@
+
 body::-webkit-scrollbar {
   display: none;
 }
+
+.page1{z-index: 3;}
 
 /* attributi soli */
 .black {
@@ -35,6 +38,17 @@ body::-webkit-scrollbar {
   opacity: 0.2
 }
 
+.opacity_black{
+  opacity: 0.9
+}
+
+.public_sans{
+  font-family: 'Public Sans';
+}
+
+.white{
+  background-color: white;
+}
 
 /* comuni */
 .centered {
@@ -93,6 +107,64 @@ body::-webkit-scrollbar {
   animation: centered_slideup 2s forwards;
 }
 
+@keyframes eliminated_slidedown {
+  from {
+    top: 50vh
+  }
+
+  to {
+    top: 150vh;
+  }
+}
+
+.eliminated_slidedown {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  width: 100vw;
+  height: 100vh;
+  animation: eliminated_slidedown 2s forwards;
+}
+
+@keyframes centered_slidedown {
+  from {
+    top: -50vh
+  }
+
+  to {
+    top: 55vh;
+  }
+}
+
+.centered_slidedown {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  width: 100vw;
+  height: 110vh;
+  animation: centered_slidedown 2s forwards;
+}
+
+@keyframes centered_opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.centered_opacity {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  width: 100vw;
+  height: 110vh;
+  top: 55vh;
+  animation: centered_opacity 2s forwards;
+}
+
 .button {
   position: absolute;
   transform: translate(-50%, 0%);
@@ -106,22 +178,74 @@ body::-webkit-scrollbar {
   border: 0;
 }
 
+@keyframes eliminated_opacity_arrow {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  99.9% {
+    opacity: 0;
+    left: 50vw;
+  }
+
+  100% {
+    opacity: 0;
+    left: -150vw;
+  }
+}
+
 .eliminated_arrow {
   position: absolute;
-  transform: translate(-50%, 0%);
-  left: -150vw;
-  top: 75vh;
+  left: 50vw;
+  animation: eliminated_opacity_arrow 2s forwards;
+}
+
+@keyframes centered_opacity_arrow {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .centered_arrow {
   position: absolute;
-  transform: translate(-50%, 0%);
   left: 50vw;
-  top: 75vh;
+  animation: centered_opacity_arrow 2s forwards;
 }
 
 .arrow {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  left:50%;
   width: 72px;
+}
+
+.arrow_down {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  width: 500px;
+  height: 200px;
+  top: 75vh;
+  /* border:1px solid white; */
+}
+
+.arrow_top {
+  /* border:1px solid white; */
+  width: 500px;
+  height: 200px;
+  top: 0vh;
+  transform: translate(-52%, 0) rotate(180deg);
 }
 
 @keyframes button_lampeggiante {
@@ -272,43 +396,43 @@ body::-webkit-scrollbar {
   top: 50vh;
   font-family: 'Public Sans';
   font-size: 20pt;
-  width: 850px;
-  height: 280px;
+  width: 940px;
+  height: 310px;
 
   /* border: 1px solid black; */
 }
 
 .born{
   position: absolute;
-  top: 85px;
+  top: 98px;
 }
 
 .dead{
   position: absolute;
-  top: 85px;
-  left: 220px;
+  top: 98px;
+  left: 245px;
 }
 
 .age{
   position: absolute;
-  top: 170px;
+  top: 196px;
 }
 
 .job{
   position: absolute;
-  top: 170px;
-  left: 220px;
+  top: 196px;
+  left: 245px;
 }
 
 .religion{
   position: absolute;
-  top: 170px;
-  left: 440px;
+  top: 196px;
+  left: 490px;
 }
 
 .bio{
   position: absolute;
-  top: 255px;
+  top: 294px;
 }
 
 .fototessera{
@@ -359,4 +483,33 @@ position: absolute;
 animation: width_barra_elaborazione 3s forwards linear;
 height: 100%;
 background-color: black;
+}
+
+
+/* ---------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------*/
+/* certificato */
+/* ---------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------*/
+
+.certificato{
+  display:none;
+}
+
+.logo_certificato
+ {
+  position: absolute;
+  width: 120.5px;
+  /* height: 19.5vh; */
+  left: 40px;
+  top:40px;
+}
+
+.titolo_certificato{
+  position: absolute;
+  left: 40px;
+  top: 122px;
+  font-size: 19pt;
+  font-family: 'Public Sans';
+  font-weight: bold;
 }

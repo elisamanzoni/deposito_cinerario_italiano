@@ -9,7 +9,8 @@
         "job" : "Biologa",
         "religion" : "Ateismo",
         "bio" : "Non aveva mai imparato ad andare in bicicletta",
-        "photo": "fototessere/1.jpg"
+        "photo": "fototessere/1.jpg",
+        "sex": "a"
     },
  {
       "name" : "Gregorio Lorelli",
@@ -19,7 +20,8 @@
         "job" : "Pizzaiolo",
         "religion" : "Cristianesimo",
         "bio" : "Aveva conosciuto la moglie Caroline durante un viaggio a Los Angeles",
-        "photo": "fototessere/2.jpg"
+        "photo": "fototessere/2.jpg",
+        "sex": "o"
 
     },
  {
@@ -30,7 +32,8 @@
         "job" : "Imprenditore tessile",
         "religion" : "Ateismo",
         "bio" : "Aveva letto ‘Alla ricerca del tempo perduto’ di Marcel Proust in circa due anni",
-        "photo": "fototessere/3.jpg"
+        "photo": "fototessere/3.jpg",
+        "sex": "o"
 
     },
     {
@@ -41,7 +44,8 @@
         "job" : "Fotografa",
         "religion" : "Ebraismo",
         "bio" : "Il suo film preferito era ‘A Beautiful Mind’ e l’aveva visto più di 10 volte",
-       "photo": "fototessere/4.jpg"
+       "photo": "fototessere/4.jpg",
+       "sex": "a"
 
     },
 {
@@ -52,7 +56,8 @@
         "job" : "Ricercatrice medica",
         "religion" : "Ebraismo",
         "bio" : "Dopo l’Erasmus a Genova, aveva scelto di vivere e lavorare in Italia perché detestava il rigido inverno della Turingia",
-        "photo": "fototessere/5.jpg"
+        "photo": "fototessere/5.jpg",
+        "sex": "a"
 
     },
      {
@@ -63,7 +68,8 @@
        "job" : "Oculista",
        "religion" : "Ateismo",
        "bio" : "Fu la prima donna della sua città a prendere una laurea in medicina",
-        "photo": "fototessere/6.jpg"
+        "photo": "fototessere/6.jpg",
+        "sex": "a"
 
     }
   ]
