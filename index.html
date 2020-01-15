@@ -4,106 +4,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,600,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
 
-  <script src="addons/p5.min.js"></script>
-  <script src="addons/p5.sound.min.js"></script>
-    <script src="addons/p5.geolocation.js"></script>
+    @media screen {
+      .id_print {
+        font-size: 50pt;
+        color: white;
+        background-color: green;
+      }
+    }
+
+    @media print {
+
+      .id_print {
+        font-size: 50pt;
+        color: white;
+        background-color: green;
+      }
+    }
+
+  </style>
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
   <script src="sketch.js"></script>
+  <script src="print.min.js"></script>
+  <script type="text/javascript" src="vatmpad.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+  <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+  <script src="https://printjs-4de6.kxcdn.com/print.min.css"></script>
+
+
 </head>
 
 <body>
-
-  <!-- pagina1 -->
-  <div id='page1' class='page1 centered'>
-    <img class="logo" src="assets/logo.png">
-    <div id='button1' class='button lampeggio'> TOCCA PER INIZIARE </div>
-  </div>
-
-  <!-- pagina2 -->
-  <div id='page2' class='page2 black eliminated'>
-    <div id='text2' class='text title_size white_txt bold'> BENVENUTO OPERATORE </div>
-  </div>
-
-  <!-- pagina3 -->
-  <div id='page3' class='page3 black eliminated'>
-    <div id='text3' class='text text_size white_txt regular'> Il Deposito cinerario Italiano è l’unico ente responsabile della gestione delle ceneri di ogni defunto italiano ai sensi degli atti di disposizione del corpo. </div>
-  </div>
-
-  <!-- pagina4 -->
-  <div id='page4' class='page4 black eliminated'>
-    <div id='text4' class='text text_size white_txt regular'> Gli operatori sono chiamati a depositare nell’urna il defunto assegnato </div>
-  </div>
-
-  <!-- pagina5 -->
-  <div id='page5' class='page5 black eliminated'>
-    <div id='text5' class='text5 text_size white_txt regular'> I resti umani sono estremamente leggeri e soggetti alle vibrazioni. <br>Durante l'atto di deposizione, il defunto andrà a mescolarsi con la cenere precedentemente depositata.  <br>
-      <br>Si prega di seguire le indicazioni con estrema attenzione. </div>
-
-    <div id='button5' class='button5 white_txt'> VISUALIZZA ULTIMA RICHIESTA </div>
-  </div>
-
-  <div id='arrow2' class='eliminated_arrow lampeggio'><img class="arrow" src="assets/freccia.png"> </div>
-  <div id='arrow3' class='eliminated_arrow lampeggio'><img class="arrow" src="assets/freccia.png"> </div>
-  <div id='arrow4' class='eliminated_arrow lampeggio'><img class="arrow" src="assets/freccia.png"> </div>
-
-
-  <div id='quadratini' class='quadratini'>
-    <div id='quadratino_1' class='quadratino'></div>
-    <div id='quadratino_2' class='quadratino'></div>
-    <div id='quadratino_3' class='quadratino'></div>
-    <div id='quadratino_4' class='quadratino'></div>
-  </div>
-
-  <!-- pagina6 -->
-  <div id='page6' class='page1 white eliminated'>
-
-    <div id='spinner' class='spinner'>
-      <div id='spinner' class='spinner_square'></div>
-    </div>
-    <div id='spinner' class='spinner_white'></div>
-    <div id='loading' class='loading'>Loading..</div>
-    <img class="scheda_richiesta opacity_05" src="assets/scheda_richiesta.png">
-
-  </div>
-
-  <!-- pagina7 -->
-  <div id="page7" class="page7 white eliminated">
-
-    <img class="scheda_richiesta" src="assets/scheda_richiesta.png">
-    <div id="nuovi_nomi" class="text_new_name">
-      <div id="name" class="name">name</div>
-      <div id="born" class="born">born</div>
-      <div id="dead" class="dead">dead</div>
-      <div id="age" class="age">age</div>
-      <div id="job" class="job">job</div>
-      <div id="religion" class="religion">religion</div>
-      <div id="bio" class="bio">bio</div>
-    </div>
-
-    <div id='button7' class='button7'> ACCETTA RICHIESTA </div>
-  </div>
-
-  <!-- pagina8 -->
-  <div id="page8" class="page8 white eliminated">
-    <div id='elaborazione' class='text text_size text_elab'> elaborazione </div>
-    <div id='elaborazione_barra_vuota' class='elaborazione_barra_vuota'>
-      <div id='elaborazione_barra_piena'></div>
-    </div>
-  </div>
-
-  <!-- pagina9 -->
-  <div id='page9' class='page9 eliminated'>
-    <div id='text9' class='text text_size regular'>
-      <div class='bold'>Pulsante in funzione</div> <br>
-      Premere il pulsante con estrema attenzione <br>
-      L’operazione è irreversibile.
-
-    </div>
-  </div>
-
+  <div id='id_print' class='id_print'> Hello World! </div>
 </body>
 
 </html>
