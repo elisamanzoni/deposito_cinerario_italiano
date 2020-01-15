@@ -364,10 +364,6 @@ function goToPage6() {
   page6.removeClass('eliminated');
   page6.addClass('centered');
 
-  //eliminare arrow_top5
-  var arrow_top5 = select('#arrow_top5');
-  arrow_top5.removeClass('centered_arrow');
-  arrow_top5.addClass('eliminated_arrow');
 
   //eliminare background
   var background = select('#black_background');
