@@ -11,6 +11,7 @@ var doc;
 var button_sound;
 var button_sound2;
 var negative_popup_sound;
+var positive_popup_sound;
 
 
 function preload(){
@@ -20,6 +21,7 @@ function preload(){
   button_sound = loadSound('sound/little_robot_sound_factory_multimedia_Click_Electronic_01.mp3');
   button_sound2 = loadSound('sound/little_robot_sound_factory_multimedia_Click_Electronic_01.mp3');
   negative_popup_sound = loadSound('sound/zapsplat_multimedia_game_harsh_negative_tone_007_24889.mp3');
+  positive_popup_sound = loadSound('sound/zapsplat_multimedia_alert_prompt_keys_warm_bright_positive_001_42398.mp3');
 
 }
 
@@ -36,19 +38,19 @@ function setup() {
     var arrow_top3 = select('#arrow_top3');
     arrow_top3.mousePressed(returnToPage2);
 
-  var arrow_down4 = select('#arrow_down4');
-  arrow_down4.mousePressed(goToPage5);
+  var button4 = select('#button4');
+  button4.mousePressed(goToPage5);
     var arrow_top4 = select('#arrow_top4');
     arrow_top4.mousePressed(returnToPage3);
 
-  var button5 = select('#button5');
-  button5.mousePressed(goToPage6);
-
+  var button_attention_box = select('#button_attention_box');
+  button_attention_box.mousePressed(goToPage6);
+  //
   var button7 = select('#button7');
   button7.mousePressed(goToPage8);
-
-  var page9 = select('#page9');
-  page9.mousePressed(goToPage1);
+  //
+  // var page9 = select('#page9');
+  // page9.mousePressed(goToPage1);
 
 }
 
@@ -57,19 +59,45 @@ function draw() {
 //fermare spinner
 
 contatore_spinner ++;
+var page5 = select('#page5');
 var page6 = select('#page6');
 var page8 = select('#page8');
+var page9 = select('#page9');
 
+if(page5.hasClass('centered_opacity') && contatore_spinner==100){
+  attention_popup();
+}
 
 if(page6.hasClass('centered') && contatore_spinner==200){
   goToPage7();
+
+  //refresh
+  var refresh =localStorage.setItem("storageRefresh", 1);
+  console.log(refresh)
+
+  contatore_spinner=0;
+
+}
+
+if(page8.hasClass('centered') && contatore_spinner==280){
+  var elaborazione_completata = select('#elaborazione_completata');
+  elaborazione_completata.removeClass('opacity_0');
+    var name = myData.people[number].name;
+    var elaborazione = select('#elaborazione').html(name + ' è pronto per la deposizione.');
+}
+
+if(page8.hasClass('centered') && contatore_spinner==500){
+goToPage9();
+var elaborazione_completata = select('#elaborazione_completata');
+elaborazione_completata.addClass('opacity_0');
   contatore_spinner=0;
 }
 
-if(page8.hasClass('centered') && contatore_spinner==200){
-  goToPage9();
+if(page9.hasClass('centered') && contatore_spinner==300){
+goToPage1();
   contatore_spinner=0;
 }
+
 
 
   // page6.removeClass('eliminated');
@@ -91,6 +119,9 @@ function goToPage1() {
   page1.removeClass('eliminated');
   page1.addClass('centered');
 
+  var logo_background = select('#logo_background');
+  logo_background.addClass('logo');
+  logo_background.removeClass('eliminated');
 
 }
 
@@ -119,8 +150,11 @@ function goToPage2() {
     var quadratino_1 = select('#quadratino_1');
     quadratino_1.addClass('white');
 
-    var quadratino_4 = select('#quadratino_4');
-    quadratino_4.removeClass('white');
+    var quadratino_2 = select('#quadratino_2');
+    quadratino_2.removeClass('white');
+
+    var quadratino_3 = select('#quadratino_3');
+    quadratino_3.removeClass('white');
 
 //sound
     if (button_sound.isPlaying() == false) {
@@ -208,6 +242,10 @@ function goToPage3() {
   var quadratino_2 = select('#quadratino_2');
   quadratino_2.addClass('white');
 
+    var logo_background = select('#logo_background');
+    logo_background.addClass('eliminated');
+    logo_background.removeClass('logo');
+
 
 }
 
@@ -221,11 +259,6 @@ function returnToPage3() {
   var page4 = select('#page4');
   page4.removeClass('centered_slideup');
   page4.addClass('eliminated_slidedown');
-
-  //eliminare arrow_down4
-  var arrow_down4 = select('#arrow_down4');
-  arrow_down4.removeClass('centered_arrow');
-  arrow_down4.addClass('eliminated_arrow');
 
   //compare arrow_down3
   var arrow_down3 = select('#arrow_down3');
@@ -278,11 +311,6 @@ function goToPage4() {
   arrow_down3.removeClass('centered_arrow');
   arrow_down3.addClass('eliminated_arrow');
 
-  //compare arrow_down4
-  var arrow_down4 = select('#arrow_down4');
-  arrow_down4.removeClass('eliminated_arrow');
-  arrow_down4.addClass('centered_arrow');
-
   //eliminare arrow_top3
   var arrow_top3 = select('#arrow_top3');
   arrow_top3.removeClass('centered_arrow');
@@ -314,68 +342,80 @@ function goToPage5() {
   //spostare page4
   var page4 = select('#page4');
   page4.removeClass('centered_slideup');
-  page4.addClass('eliminated_slideup');
+  page4.addClass('eliminated_opacity');
 
   //compare page5
   var page5 = select('#page5');
   page5.removeClass('eliminated');
-  page5.addClass('centered_slideup');
+  page5.addClass('centered_opacity');
 
-  //sparisce arrow_down4
-  var arrow_down4 = select('#arrow_down4');
-  arrow_down4.addClass('eliminated_arrow');
-  arrow_down4.removeClass('centered_arrow');
+  //compare scheda vuota
+  var nuovi_nomi_empty = select('#nuovi_nomi_empty');
+  nuovi_nomi_empty.removeClass('eliminated');
+  nuovi_nomi_empty.addClass('centered_opacity_leggero');
+  nuovi_nomi_empty.addClass('nuovi_nomi_div');
 
   //eliminare arrow_top4
   var arrow_top4 = select('#arrow_top4');
   arrow_top4.removeClass('centered_arrow');
   arrow_top4.addClass('eliminated_arrow');
 
-  //compare arrow_top5
-  var arrow_top5 = select('#arrow_top5');
-  arrow_top5.removeClass('eliminated_arrow');
-  arrow_top5.addClass('centered_arrow');
-
-
   //quadratino 3 si decolora
   var quadratino_3 = select('#quadratino_3');
   quadratino_3.removeClass('white');
 
-  //quadratino 4 si colora
-  var quadratino_4 = select('#quadratino_4');
-  quadratino_4.addClass('white');
+  //eliminare background
+  var background = select('#black_background');
+  background.removeClass('centered_opacity');
+  background.addClass('eliminated_opacity');
 
+
+
+
+    //sound
+        if (button_sound2.isPlaying() == false) {
+              button_sound2.play();
+            //mettere in pausa suono precedente
+              button_sound.pause();
+            }
+
+contatore_spinner = 0;
+
+}
+
+function attention_popup(){
+  var attention_box = select ('#attention_box');
+  attention_box.addClass('comparsa_dopo');
+  attention_box.removeClass('opacity_0');
+
+  if (negative_popup_sound.isPlaying() == false) {
+        negative_popup_sound.play();
+      //mettere in pausa suono precedente
+        button_sound2.pause();
+      }
 }
 
 function goToPage6() {
 
   //AGGIUNGERE CLASS ELIMINATED ALLA PAGINA PRIMA!
   var page4 = select('#page4');
-  page4.removeClass('eliminated_slideup');
+  page4.removeClass('eliminated_opacity');
   page4.addClass('eliminated');
 
   //eliminare page5
   var page5 = select('#page5');
-  page5.removeClass('centered_slideup');
+  page5.removeClass('centered_opacity');
   page5.addClass('eliminated');
+
+  //eliminare attention_box
+  var attention_box = select ('#attention_box');
+  attention_box.addClass('opacity_0');
+  attention_box.removeClass('comparsa_dopo');
 
   //compare page6
   var page6 = select('#page6');
   page6.removeClass('eliminated');
   page6.addClass('centered');
-
-
-  //eliminare background
-  var background = select('#black_background');
-  background.removeClass('centered_opacity');
-  background.addClass('eliminated');
-
-  //sound
-      if (button_sound2.isPlaying() == false) {
-            button_sound2.play();
-          //mettere in pausa suono precedente
-            button_sound.pause();
-          }
 
   contatore_spinner=0;
 
@@ -383,8 +423,10 @@ function goToPage6() {
   number += 1;
   var photo = myData.people[number].photo;
   var new_photo = createImg(photo);
-  new_photo.parent('#page7');
+  new_photo.parent('#nuovi_nomi');
   new_photo.addClass('fototessera');
+
+  contatore_spinner=0;
 
 
 }
@@ -395,16 +437,22 @@ function goToPage7(){
   page6.removeClass('centered');
   page6.addClass('eliminated');
 
+  //eliminare scheda vuota
+  var nuovi_nomi_empty = select('#nuovi_nomi_empty');
+  nuovi_nomi_empty.removeClass('centered_opacity_leggero');
+  nuovi_nomi_empty.removeClass('nuovi_nomi_div');
+  nuovi_nomi_empty.addClass('eliminated');
+
   //compare page7
   var page7 = select('#page7');
   page7.removeClass('eliminated');
   page7.addClass('centered');
 
 //sound
-  if (negative_popup_sound.isPlaying() == false) {
-        negative_popup_sound.play();
+  if (positive_popup_sound.isPlaying() == false) {
+        positive_popup_sound.play();
       //mettere in pausa suono precedente
-        button_sound2.pause();
+        negative_popup_sound.pause();
       }
 
   //si aggiungono nomi
@@ -422,9 +470,8 @@ function goToPage7(){
   console.log(number)
 
   var new_name = select('#name').html(name);
-  var new_born = select('#born').html(born);
-  var new_dead = select('#dead').html(dead);
-  var new_age = select('#age').html(age);
+  var new_born = select('#born').html(born + ' - ' + dead);
+  // var new_age = select('#age').html(age);
   var new_job = select('#job').html(job);
   var new_religion = select('#religion').html(religion);
   var new_bio = select('#bio').html(bio);
@@ -440,10 +487,13 @@ function goToPage7(){
 
  var testo_certificato3 = select('#testo_certificato3').html('La registrazione è avvenuta alle ore ' + formattedTime + ' del 12.03.2020 presso l’ufficio di Deposito Cinerario Italiano di Milano.');
 
+
+
+
 }
 
 function goToPage8(){
-  window.print();
+  // window.print();
   //eliminare page7
   var page7 = select('#page7');
   page7.removeClass('centered');
@@ -462,7 +512,13 @@ console.log(number)
   var elaborazione_barra_piena = select('#elaborazione_barra_piena');
   elaborazione_barra_piena.addClass('elaborazione_barra_piena');
 
-  contatore_spinner=0;
+  if (button_sound.isPlaying() == false) {
+        button_sound.play();
+      //mettere in pausa suono precedente
+        positive_popup_sound.pause();
+      }
+
+contatore_spinner=0;
 }
 
 function goToPage9(){
@@ -481,6 +537,18 @@ function goToPage9(){
   page9.removeClass('eliminated');
   page9.addClass('centered');
 
+  //togliere eliminated_opacity da black_background
+  var black_background = select('#black_background');
+  black_background.removeClass('eliminated_opacity');
+  black_background.addClass('eliminated');
+
+  //sound
+    if (positive_popup_sound.isPlaying() == false) {
+          positive_popup_sound.play();
+        //mettere in pausa suono precedente
+          button_sound.pause();
+        }
+
   //si crea pdf
 
   var name = myData.people[number].name;
@@ -492,5 +560,6 @@ function goToPage9(){
     var formattedTime = hours + ":" + minutes.substr(-2) + ':' + seconds.substr(-2);
 
     console.log('time: ' + formattedTime);
+    contatore_spinner=0;
 
 }

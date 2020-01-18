@@ -21,8 +21,9 @@
 <body>
 
 
-  <img class="logo" src="assets/logo.png">
-  <div id='black_background' class='black eliminated opacity_black no_print'></div>
+  <!-- <img id='scheda_richiesta_background' class="scheda_richiesta opacity_05" src="assets/form_empty.png"> -->
+  <img id='logo_background' class="logo no_print" src="assets/logo.png">
+  <div id='black_background' class='black eliminated  no_print'></div>
 
   <!-- pagina1 -->
   <div id='page1' class='page1 centered no_print white'>
@@ -34,71 +35,97 @@
   <div id='page2' class='page2 page eliminated no_print'>
     <div id='text2' class='text title_size white_txt bold'> Benvenuto operatore<br>
       <div class='text_size white_txt regular'><br>Il Deposito Cinerario Italiano è l’unico ente <br>
-  autorizzato alla gestione dei defunti. </div>
-</div>
+        autorizzato alla gestione dei defunti. </div>
+    </div>
   </div>
 
   <!-- pagina3 -->
   <div id='page3' class='page3 page eliminated no_print'>
-    <div id='text3' class='text text_size white_txt regular'> Con il vigente obbligo di cremazione, il Deposito <br>
-    Cinerario Italiano fonda la sua politica aziendale <br>
+    <div id='text3' class='text text_size white_txt regular'> Con il vigente obbligo di cremazione, <br>
+      il Deposito Cinerario Italiano <br>fonda la sua politica aziendale<br>
     sugli Atti di Disposizione del corpo. </div>
     </div>
 
   <!-- pagina4 -->
   <div id='page4' class='page4 page eliminated no_print'>
     <div id='text4' class='text text_size white_txt regular'> Gli operatori sono chiamati a depositare <br> nell’urna il defunto assegnato </div>
+    <div id='button4' class='button4 white_txt'> VISUALIZZA ULTIMA RICHIESTA </div>
   </div>
 
-  <!-- pagina5 -->
-  <div id='page5' class='page5 page eliminated no_print'>
-    <div id='text5' class='text5 text_size white_txt regular'> Una volta depositati i resti umani <br>
-        nell’urna, le ceneri di ciascun defunto<br>
-          si mescoleranno tra di loro. </div>
-
-    <div id='button5' class='button5 white_txt'> VISUALIZZA ULTIMA RICHIESTA </div>
-  </div>
 
   <div id='arrow_down2' class='eliminated_arrow arrow_down no_print'><img class="arrow" src="assets/freccia.png"> </div>
   <div id='arrow_down3' class='eliminated_arrow arrow_down no_print'><img class="arrow" src="assets/freccia.png"> </div>
-  <div id='arrow_down4' class='eliminated_arrow arrow_down no_print'><img class="arrow" src="assets/freccia.png"> </div>
+  <!-- <div id='arrow_down4' class='eliminated_arrow arrow_down no_print'><img class="arrow" src="assets/freccia.png"> </div> -->
 
   <div id='arrow_top3' class='eliminated_arrow arrow_top no_print'><img class="arrow" src="assets/freccia.png"> </div>
   <div id='arrow_top4' class='eliminated_arrow arrow_top no_print'><img class="arrow" src="assets/freccia.png"> </div>
   <!-- <div id='arrow_top5' class='eliminated_arrow arrow_top no_print'><img class="arrow" src="assets/freccia.png"> </div> -->
 
-
   <div id='quadratini' class='quadratini no_print'>
     <div id='quadratino_1' class='quadratino'></div>
     <div id='quadratino_2' class='quadratino'></div>
     <div id='quadratino_3' class='quadratino'></div>
-    <div id='quadratino_4' class='quadratino'></div>
+    <!-- <div id='quadratino_4' class='quadratino'></div> -->
   </div>
 
-  <!-- pagina6 -->
-  <div id='page6' class='page1 white eliminated no_print'>
+  <div id="nuovi_nomi_empty" class="text_new_name eliminated no_print">
+    <img class="logo7 opacity_05" src="assets/logo.png">
+    <img class="fototessera opacity_05" src="assets/fototessera_empty.png">
+    <div id="name_empty" class="opacity_05 name nuovi_nomi_div2 bold title_size">Nome</div>
+    <div id="born_empty" class="opacity_05 born nuovi_nomi_div2">2020 - 2020</div>
+    <!-- <div id="dead" class="dead nuovi_nomi_div2">dead</div> -->
+    <!-- <div id="age" class="age nuovi_nomi_div2">age</div> -->
+    <div id='job_piccolo_empty' class='opacity_05 job_piccolo nomi_piccolo nuovi_nomi_div2'>PROFESSIONE</div>
+    <div id="job_empty" class="opacity_05 job nuovi_nomi_div2">Professione</div>
+    <div id='religion_piccolo_empty' class='opacity_05 religion_piccolo nomi_piccolo nuovi_nomi_div2'>RELIGIONE</div>
+    <div id="religion_empty" class="opacity_05 religion nuovi_nomi_div2">Religione</div>
+    <div id='bio_piccolo_empty' class='opacity_05 bio_piccolo nomi_piccolo nuovi_nomi_div2'>NOTE DELLA FAMIGLIA</div>
+    <div id="bio_empty" class="opacity_05 bio nuovi_nomi_div2">Note della famiglia</div>
+  </div>
 
+    <!-- pagina5 -->
+    <div id='page5' class='page5 page eliminated no_print'>
+
+      <div id='attention_box' class='attention_box white opacity_0'>
+        <div id='black_attention_box' class='black_attention_box black white_txt title_size'> Attenzione</div>
+        <img class='icon_attention_box' src="assets/attention_icon.png">
+        <div id='text_attention_box' class='text_attention_box'>
+          Le ceneri dei defunti si mescoleranno irreversibilmente.<br>
+          Si prega di seguire le indicazioni con estrema attenzione.
+        </div>
+        <div id='button_attention_box' class='button_attention_box bold'>OK</div>
+      </div>
+
+    </div>
+
+  <!-- pagina6 -->
+  <div id='page6' class='page6 eliminated no_print'>
     <div id='spinner' class='spinner no_print'>
       <div id='spinner' class='spinner_square'></div>
     </div>
     <div id='spinner' class='spinner_white no_print'></div>
     <div id='loading' class='loading no_print'>Loading..</div>
-    <img class="scheda_richiesta opacity_05 no_print" src="assets/scheda_richiesta.png">
+
 
   </div>
 
   <!-- pagina7 -->
   <div id="page7" class="page7 white eliminated no_print">
 
-    <img class="scheda_richiesta no_print" src="assets/scheda_richiesta.png">
-    <div id="nuovi_nomi" class="text_new_name no_print">
-      <div id="name" class="name">name</div>
-      <div id="born" class="born">born</div>
-      <div id="dead" class="dead">dead</div>
-      <div id="age" class="age">age</div>
-      <div id="job" class="job">job</div>
-      <div id="religion" class="religion">religion</div>
-      <div id="bio" class="bio">bio</div>
+    <!-- <img class="scheda_richiesta no_print" src="assets/scheda_richiesta.png"> -->
+
+    <div id="nuovi_nomi" class="nuovi_nomi_div text_new_name no_print">
+      <img class="logo7" src="assets/logo.png">
+      <div id="name" class="name nuovi_nomi_div2 bold title_size">name</div>
+      <div id="born" class="born nuovi_nomi_div2">born</div>
+      <!-- <div id="dead" class="dead nuovi_nomi_div2">dead</div> -->
+      <!-- <div id="age" class="age nuovi_nomi_div2">age</div> -->
+      <div id='job_piccolo' class='job_piccolo nomi_piccolo nuovi_nomi_div2'>PROFESSIONE</div>
+      <div id="job" class="job nuovi_nomi_div2">job</div>
+      <div id='religion_piccolo' class='religion_piccolo nomi_piccolo nuovi_nomi_div2'>RELIGIONE</div>
+      <div id="religion" class="religion nuovi_nomi_div2">religion</div>
+      <div id='bio_piccolo' class='bio_piccolo nomi_piccolo nuovi_nomi_div2'>NOTE DELLA FAMIGLIA</div>
+      <div id="bio" class="bio nuovi_nomi_div2">bio</div>
     </div>
 
     <div id='button7' class='button7 no_print'> ACCETTA RICHIESTA </div>
@@ -106,6 +133,7 @@
 
   <!-- pagina8 -->
   <div id="page8" class="page8 white eliminated no_print">
+    <div id='elaborazione_completata' class='text text_size text_elab_compl opacity_0'> Elaborazione completata. </div>
     <div id='elaborazione' class='text text_size text_elab'> elaborazione </div>
     <div id='elaborazione_barra_vuota' class='elaborazione_barra_vuota'>
       <div id='elaborazione_barra_piena'></div>
@@ -114,10 +142,13 @@
 
   <!-- pagina9 -->
   <div id='page9' class='page9 eliminated white no_print'>
-    <div id='text9' class='text text_size regular'>
-      <div class='bold'>Pulsante in funzione</div> <br>
-      Premere il pulsante con estrema attenzione <br>
-      L’operazione è irreversibile.
+    <div id='button_box' class='button_box white'>
+      <div id='black_attention_box' class='black_attention_box black white_txt title_size'> Pulsante in funzione</div>
+      <img class='icon_button_box' src="assets/power_icon.png">
+      <div id='text_attention_box' class='text_attention_box'>
+        Il pulsante attiva il meccanismo di deposizione nell’urna.<br>
+        Premerlo con estrema attenzione.
+      </div>
     </div>
   </div>
 
