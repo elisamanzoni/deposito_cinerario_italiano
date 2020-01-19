@@ -26,6 +26,7 @@ function preload(){
 }
 
 function setup() {
+  localStorage.setItem("storageRefresh", 0);
 
   var page1 = select('#page1');
   page1.mousePressed(goToPage2);
@@ -71,9 +72,7 @@ if(page5.hasClass('centered_opacity') && contatore_spinner==100){
 if(page6.hasClass('centered') && contatore_spinner==200){
   goToPage7();
 
-  //refresh
-  var refresh =localStorage.setItem("storageRefresh", 1);
-  console.log(refresh)
+
 
   contatore_spinner=0;
 
@@ -126,6 +125,11 @@ function goToPage1() {
 }
 
 function goToPage2() {
+
+  window.print();
+
+      //refresh
+      localStorage.setItem("storageRefresh", 1);
 
   //eliminare page1
   var page1 = select('#page1');

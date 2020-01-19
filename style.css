@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 }
 
 .opacity_05 {
-  opacity: 0.2
+  opacity: 0.1!important
 }
 
 .opacity_0 {
@@ -389,46 +389,164 @@ body::-webkit-scrollbar {
   top: 50vh;
 }
 
-@keyframes rotate {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
 
-  to {
-    transform:translate(-50%, -50%)  rotate(360deg);
-  }
-}
+/* //spinner */
 
 
 .spinner{
   position: absolute;
-  height: 30px;
-  width: 30px;
-  left: 44vw;
-  top: 47vh;
-  background-color: black;
-  border-radius: 100%;
-  animation: rotate 1s infinite linear;
+  transform: translate(-50%,-50%);
+  left: 50vw;
+  top: 50vh;
+  height: 126.5px;
+  width: 63px;
+  /* border:1px solid red; */
+  /* animation: rotate 1s infinite linear; */
 }
 
-.spinner_white{
+.spinner_general{
   position: absolute;
-  height: 18px;
-  width: 18px;
-  transform: translate(-50%, -50%);
-  left: 44vw;
-  top: 47vh;
-  background-color: white;
-  border-radius: 100%;
+  left: 0;
+  width: 100%;
 }
 
-.spinner_square{
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  padding-left: 0px;
-  background-color: white;
+@keyframes spinner1 {
+  0% {
+    bottom: 15px;
+    opacity: 0;
+  }
+
+  33.3% {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
+
+@keyframes spinner2 {
+  0% {
+    bottom: 62.6px;
+    opacity: 0;
+  }
+
+  16.6% {
+    bottom: 62.6px;
+    opacity: 0;
+  }
+
+  50% {
+    bottom: 47.6px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 47.6px;
+    opacity: 1;
+  }
+}
+
+@keyframes spinner3 {
+  0% {
+    bottom: 89.3px;
+    opacity: 0;
+  }
+
+  33.3% {
+    bottom: 89.3px;
+    opacity: 0;
+  }
+
+  66.6% {
+    bottom: 74.3px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 74.3px;
+    opacity: 1;
+  }
+}
+
+@keyframes spinner4 {
+  0% {
+    bottom: 109.4px;
+    opacity: 0;
+  }
+
+  50% {
+    bottom: 113.4px;
+    opacity: 0;
+  }
+
+  83% {
+    bottom: 98.4px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 98.4px;
+    opacity: 1;
+  }
+}
+
+@keyframes spinner5 {
+  0% {
+    bottom: 134.9px;
+    opacity: 0;
+  }
+
+  66.6% {
+    bottom: 134.9px;
+    opacity: 0;
+  }
+
+  95% {
+    bottom: 119.9px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 119.9px;
+    opacity: 1;
+  }
+}
+
+
+
+.spinner1{
+  height: 32.6px;
+  animation: spinner1 1.5s infinite linear;
+}
+
+.spinner2{
+  bottom: 47.6px;
+  height: 11.7px;
+  animation: spinner2 1.5s infinite linear;
+}
+
+.spinner3{
+  bottom: 74.3px;
+  height: 9.1px;
+  animation: spinner3 1.5s infinite linear;
+}
+
+.spinner4{
+  bottom: 98.4px;
+  height: 6.5px;
+  animation: spinner4 1.5s infinite linear;
+}
+
+.spinner5{
+  bottom: 119.9px;
+  height: 3.9px;
+  animation: spinner5 1.5s infinite linear;
+}
+
+
 
 .loading {
   position: absolute;
