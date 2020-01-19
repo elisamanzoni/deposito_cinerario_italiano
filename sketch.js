@@ -126,7 +126,7 @@ function goToPage1() {
 
 function goToPage2() {
 
-  window.print();
+
 
       //refresh
       localStorage.setItem("storageRefresh", 1);
@@ -491,7 +491,7 @@ function goToPage7(){
 
  var testo_certificato3 = select('#testo_certificato3').html('La registrazione è avvenuta alle ore ' + formattedTime + ' del 12.03.2020 presso l’ufficio di Deposito Cinerario Italiano di Milano.');
 
-
+  window.print();
 
 
 }
