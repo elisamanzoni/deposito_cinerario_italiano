@@ -1,4 +1,4 @@
-var number=0;
+var number=499;
 var contatore_spinner = 0;
 
 var myImage;
@@ -12,6 +12,8 @@ var button_sound;
 var button_sound2;
 var negative_popup_sound;
 var positive_popup_sound;
+var positive_popup_sound2;
+
 
 
 function preload(){
@@ -22,11 +24,13 @@ function preload(){
   button_sound2 = loadSound('sound/little_robot_sound_factory_multimedia_Click_Electronic_01.mp3');
   negative_popup_sound = loadSound('sound/zapsplat_multimedia_game_harsh_negative_tone_007_24889.mp3');
   positive_popup_sound = loadSound('sound/zapsplat_multimedia_alert_prompt_keys_warm_bright_positive_001_42398.mp3');
+  positive_popup_sound2 = loadSound('sound/zapsplat_multimedia_alert_prompt_keys_warm_bright_positive_001_42398.mp3');
 
 }
 
 function setup() {
-  localStorage.setItem("storageRefresh", 0);
+  localStorage.setItem("registroRefresh", 0);
+  localStorage.setItem("printRefresh", 0);
 
   var page1 = select('#page1');
   page1.mousePressed(goToPage2);
@@ -64,11 +68,14 @@ var page5 = select('#page5');
 var page6 = select('#page6');
 var page8 = select('#page8');
 var page9 = select('#page9');
+var page10 = select('#page10');
+var page1 = select('#page1');
 
 if(page5.hasClass('centered_opacity') && contatore_spinner==100){
   attention_popup();
 }
 
+//200
 if(page6.hasClass('centered') && contatore_spinner==200){
   goToPage7();
 
@@ -78,13 +85,21 @@ if(page6.hasClass('centered') && contatore_spinner==200){
 
 }
 
-if(page8.hasClass('centered') && contatore_spinner==280){
+//270
+if(page8.hasClass('centered') && contatore_spinner==270){
+    var elaborazione = select('#elaborazione').html(' ');
+  }
+
+//320
+if(page8.hasClass('centered') && contatore_spinner==320){
   var elaborazione_completata = select('#elaborazione_completata');
   elaborazione_completata.removeClass('opacity_0');
     var name = myData.people[number].name;
-    var elaborazione = select('#elaborazione').html(name + ' è pronto per la deposizione.');
+    var sex = myData.people[number].sex;
+    var elaborazione = select('#elaborazione').html(name + ' è pront' + sex +' per la deposizione.');
 }
 
+//560
 if(page8.hasClass('centered') && contatore_spinner==500){
 goToPage9();
 var elaborazione_completata = select('#elaborazione_completata');
@@ -92,26 +107,45 @@ elaborazione_completata.addClass('opacity_0');
   contatore_spinner=0;
 }
 
-if(page9.hasClass('centered') && contatore_spinner==300){
-goToPage1();
+//300
+if(page9.hasClass('centered') && contatore_spinner==200){
+goToPage10();
   contatore_spinner=0;
 }
 
+//300
+if(page10.hasClass('centered') && contatore_spinner==160){
+complete_popup();
+}
 
+if (page1.hasClass('eliminated') && localStorage.getItem('tabletRefresh') == 1) {
+    goToPage1();
+}
 
-  // page6.removeClass('eliminated');
-  // page6.addClass('centered');
+// if(page10.hasClass('centered') && contatore_spinner==300){
+//
+// goToPage1();
+// }
+
 
 }
 
 function goToPage1() {
 
+  //refresh
+  localStorage.setItem("registroRefresh", 0);
+
   //AGGIUNGERE CLASS ELIMINATED ALLA PAGINA PRIMA!
 
-  //eliminare page1
-  var page9 = select('#page9');
-  page9.removeClass('centered');
-  page9.addClass('eliminated');
+  //eliminare page10
+  var page10 = select('#page10');
+  page10.removeClass('centered');
+  page10.addClass('eliminated');
+
+  //eliminare popup
+  var complete_box = select ('#complete_box');
+  complete_box.addClass('opacity_0');
+  complete_box.removeClass('comparsa_dopo');
 
   //compare page2
   var page1 = select('#page1');
@@ -126,10 +160,6 @@ function goToPage1() {
 
 function goToPage2() {
 
-
-
-      //refresh
-      localStorage.setItem("storageRefresh", 1);
 
   //eliminare page1
   var page1 = select('#page1');
@@ -426,7 +456,7 @@ function goToPage6() {
 //creo foto
   number += 1;
   var photo = myData.people[number].photo;
-  var new_photo = createImg(photo);
+  var new_photo = createImg('fototessere/'+photo);
   new_photo.parent('#nuovi_nomi');
   new_photo.addClass('fototessera');
 
@@ -486,12 +516,17 @@ function goToPage7(){
     seconds = '0' + date.getSeconds();
     var formattedTime = hours + ":" + minutes.substr(-2);
 
-  var testo_certificato2 = select('#testo_certificato2').html('certifica che l’operatore di deposito  ha correttamente depositato ' + name+
- ', ' + job + ' di religione ' + religion + ' nat' +sex+ ' nel ' + born + ' e mort'+sex+' nel ' + dead +'.');
+ // var nome_certificato = select('#nome_certificato').html(name);
+ // var born_certificato = select('#born_certificato').html(born);
+ // var dead_certificato = select('#dead_certificato').html(dead);
+ // var job_certificato = select('#job_certificato').html(job);
+ // var religion_certificato = select('#religion_certificato').html(religion);
+ // var testo_certificato4 = select('#testo_certificato4').html('La registrazione è avvenuta alle ore ' + formattedTime + ' del 12.03.2020 presso l’ufficio di Deposito Cinerario Italiano di Milano.');
 
- var testo_certificato3 = select('#testo_certificato3').html('La registrazione è avvenuta alle ore ' + formattedTime + ' del 12.03.2020 presso l’ufficio di Deposito Cinerario Italiano di Milano.');
-
-  window.print();
+ //refresh
+ localStorage.setItem("storageNumber", number);
+ localStorage.setItem("storageTime", formattedTime);
+  // window.print();
 
 
 }
@@ -565,5 +600,41 @@ function goToPage9(){
 
     console.log('time: ' + formattedTime);
     contatore_spinner=0;
+
+}
+
+function goToPage10(){
+  // window.print();
+  //eliminare page9
+  var page9 = select('#page9');
+  page9.removeClass('centered');
+  page9.addClass('eliminated');
+
+  //compare page10
+  var page10 = select('#page10');
+  page10.removeClass('eliminated');
+  page10.addClass('centered');
+
+    var name = myData.people[number].name;
+    var sex = myData.people[number].sex;
+    var text_complete_box = select('#text_complete_box').html(name +' è stat'+ sex + ' correttamente depositat'+ sex +'.' + ' Controllare il registro.');
+
+
+}
+
+function complete_popup(){
+  var complete_box = select ('#complete_box');
+  complete_box.addClass('comparsa_dopo');
+  complete_box.removeClass('opacity_0');
+
+  if (positive_popup_sound2.isPlaying() == false) {
+        positive_popup_sound2.play();
+      //mettere in pausa suono precedente
+        positive_popup_sound.pause();
+      }
+
+
+        //refresh
+        localStorage.setItem("registroRefresh", 1);
 
 }

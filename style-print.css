@@ -1,56 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans:400,700&display=swap');
 
+/* //margini:predefinito */
+
+body{
+  margin:0mm;
+}
 .no_print{
   display: none!important;
 }
 
-.logo_certificato
+.certificato_top
  {
   position: absolute;
-  width: 43mm;
-  /* height: 19.5vh; */
-  left: 15mm;
-  top:15mm;
+  width: 100%;
 }
 
-.linea_certificato{
+.certificato_bottom
+ {
   position: absolute;
-  width: 184mm;
-  height: 3mm;
-  left: 15mm;
-  background-color: black;
+  width: 100%;
+  bottom:0px;
 }
 
-.top_linea{
-  .top:91mm;
-}
-
-.titolo_certificato{
+.certificato_firma
+ {
   position: absolute;
-  left: 15mm;
-  top: 63mm;
-  font-size: 19pt;
-  font-family: sans-serif;
-  font-weight: 700;
+  width: 67mm;
+  bottom:50mm;
+  right:15mm;
 }
 
 .testo_certificato{
   position: absolute;
-  line-height: 24pt;
-  width:600px;
-  left: 17mm;
-  font-size: 12pt;
+  line-height: 23pt;
+  width:173mm;
+  left: 19mm;
+  font-size: 13pt;
   font-family: sans-serif;
 }
 
 .top1{
-    top: 107mm;
+    top: 116mm;
 }
 
 .top2{
-    top: 142mm;
+    top: 157mm;
 }
 
 .top3{
-    top: 170mm;
+    top: 166mm;
+}
+
+.info_certificato{
+  left:55mm!important;
+}
+
+.top4{
+    top: 225mm;
+}
+
+.top5{
+    bottom: 52mm;
 }
